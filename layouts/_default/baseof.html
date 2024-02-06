@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    {{ with .Params.title }}
+    <meta property="og:title" content= " {{ . }}" >
+    {{ end }}
+    
+    {{ with .Params.social_description }}
+    <meta property="og:description" content="{{ . }}">
+    {{ end }}
+
+    {{ with .Params.social_image }}
+    <meta property="og:image" content="http://localhost:1313{{ . }}">
+    {{ end }}
+
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+
+  
+
+
+
+    {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <link rel="stylesheet" href="/base.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      {{partial "nav" (dict "menuID" "main" "page" .)}}
+      {{ block "main" . }}{{ end }}
+      {{partial "footer"}}
+      <script src="{{ .Site.BaseURL }}/js/scripts.min.js" defer></script>
+      <script> //-- This script is for the accordion component ---*//
+                var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      </script>
+  </body>
+</html>

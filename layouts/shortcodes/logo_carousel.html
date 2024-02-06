@@ -1,0 +1,11 @@
+<div class="containerCenter carouselContainer">
+    <ul class="containerCenter" >
+        {{- range index .Page.Params (.Get "images") }}
+        {{ $src :=  (.url)  }}
+        {{ $image := resources.Get $src }}
+            <li>
+                <img src="{{ $image.RelPermalink }}" alt="{{ .alt }}" width="150" class="carousel-logo">
+            </li>
+        {{ end }}
+    </ul>
+</div>

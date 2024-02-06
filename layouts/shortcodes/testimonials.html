@@ -1,0 +1,56 @@
+<div class="element_container containerCenter">
+  <div class="element_wrapper containerCenter">   
+    <div class=" {{.Get 1 }} testimonial_container">
+        <div></div>
+        {{- range index .Page.Params (.Get 0 ) }} 
+        <div>
+          <p class="testimonial-carousel">
+            {{ .content }}
+          </p>
+          <p class="speaker-carousel">
+            {{ .author }}
+          </p>
+        {{ end }}
+        </div>
+    </div>
+  </div>
+</div>
+
+<style scoped>
+  .testimonial_container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 75px;
+    margin-top: 100px;
+    padding: 50px;
+    background-color: var(--accent_orange);
+    border-radius: 50px;
+  }
+
+  p.testimonial-carousel{
+  font-family: "Roboto" , sans-serif !important;
+  color: white;
+  text-align: left;
+  font-size: 27px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+p.speaker-carousel {
+  font-family: "Roboto" , sans-serif !important;
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+    .testimonial_container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+
+</style>

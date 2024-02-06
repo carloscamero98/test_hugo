@@ -1,0 +1,78 @@
+{{ $clr := .Get "background" }}
+{{ $align := .Get "align" }}
+
+<div class="element_container">
+  <div class="hero_banner_wrapper containerCenter {{ $clr }}">
+
+    {{ if eq $align "left" }}
+    <div class="containerCenter hero_banner">
+      <div class="hero_banner_text_container">
+        {{- range index .Page.Params (.Get "content" ) }}
+        <h3 class="xs-title" style="color: white;">
+          {{ .title }}
+        </h3>
+        <p class="text" style="color: white;">
+          {{ .content }}
+        </p>
+        {{ end }}
+      </div>
+      {{ $src := .Get "image" }}
+      {{ $image := resources.Get $src }}
+      <img src="{{ $image.RelPermalink }}" alt="{{ .Get `alt_image` }}" class="hero_banner_image">
+    </div>
+    {{ else }}
+    <div class="containerCenter hero_banner">
+      {{ $src := .Get "image" }}
+      {{ $image := resources.Get $src }}
+      <img src="{{ $image.RelPermalink }}" alt="{{ .Get `alt_image` }}" class="hero_banner_image">
+      <div class="hero_banner_text_container">
+        {{- range index .Page.Params (.Get "content" ) }}
+        <h3 class="xs-title" style="color: white;">
+          {{ .title }}
+        </h3>
+        <p class="text" style="color: white;">
+          {{ .content }}
+        </p>
+        {{ end }}
+      </div>
+    </div>
+    {{end}}
+
+  </div>
+</div>
+
+<style scoped>
+  .hero_banner_wrapper {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .hero_banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 50px;
+    max-width: 1300px;
+  }
+
+  .hero_banner_image {
+    margin-top: -50px;
+    box-shadow: 2px 10px 12px -6px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 2px 10px 12px -6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 2px 10px 12px -6px rgba(0, 0, 0, 0.6);
+    width: 100%; /* Ensure the image scales with its container */
+  }
+
+  .hero_banner_text_container {
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .hero_banner {
+      grid-template-columns: 1fr; /* Display as a single column */
+    }
+
+    .hero_banner_image{
+      margin-top: 10px;
+    }
+  }
+</style>

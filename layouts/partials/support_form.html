@@ -1,0 +1,117 @@
+<div class="form_container">
+    <form>
+        <div class="fields_row fields_row_two_columns">
+            <div>
+                <div class="field">
+                    <div class="field_label">
+                        Summary of Request
+                    </div>
+                    <div class="field_input">
+                        <input class="field_input" type="text" id="fname" name="Summary of Requeste">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="field_label">
+                        Email
+                    </div>
+                    <div class="field_input">
+                        <input class="field_input" type="email" id="fname" name="email">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="fields_row">
+                <div class="field">
+                    <div class="field_label">
+                        Request Details
+                    </div>
+                    <div class="field_input" >
+                        <textarea class="field_input" type="text" id="fdetails" name="Request Details"> </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit_button_container containerCenter">
+            <input class="submit_button" type="submit" value="Submit"> </input>
+        </div>
+    </form>
+</div>
+
+
+<style scoped>
+    .form_container{
+        margin-top: 50px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+        background-color: white;
+        -webkit-box-shadow: 16px 10px 37px -5px rgba(0,0,0,0.28);
+        -moz-box-shadow: 16px 10px 37px -5px rgba(0,0,0,0.28);  
+        box-shadow: 16px 10px 37px -5px rgba(0,0,0,0.28);
+    }
+
+    .form_title{
+        color: white;
+        text-align: center;
+    }
+
+    .fields_row{
+
+    }
+
+    .fields_row_two_columns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .field_label{
+        font-weight: bold;
+        color: var(--light_blue);
+    }
+    .field_input{
+        width: 100%;
+        height: 40px;
+        margin-top: 5px;
+        border-radius: 10px;
+        border-color: var(--light_blue);;
+    }
+
+    .field{
+        padding: 15px;
+    }
+
+    .submit_button{
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: var(--accent_orange);
+        color: white;    
+        font-weight: 900;
+        font-size: 17px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    .submit_button_container{
+        margin-top: 15px;
+    
+    }
+
+    textarea {
+    width: 100%;
+    height: 125px !important;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    }
+</style>

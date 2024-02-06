@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Industrial · Workplace Safety on CIP Reporting</title>
+    <link>http://example.org/tags/industrial-workplace-safety/</link>
+    <description>Recent content in Industrial · Workplace Safety on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/tags/industrial-workplace-safety/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>International Logistic Company</title>
+      <link>http://example.org/success_stories/international-logistic-company/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/international-logistic-company/</guid>
+      <description>Empowering the Shift: From Manual Claims Processing to Focusing on Risk Mitigation and PreventionAs a third-party logistics provider, moving goods around the globe involves inherent risks, to employees who are handling the products, risks to customers should anything happen to those products in transit, and risks to the company’s property. It is therefore critical to have a robust system for reporting, documenting, and tracking near misses, incidents, and claims wherever they occur in the world.</description>
+    </item>
+    
+  </channel>
+</rss>

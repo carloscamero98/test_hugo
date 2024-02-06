@@ -1,0 +1,20 @@
+<div class="element_container containerCenter ">
+    <div class="element_wrapper two_column">
+        {{ .Inner }}
+    </div>
+</div>
+
+<style scoped>
+    .two_column{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width:1200px) {
+    /* Add responsive styles for screens with a maximum width of 768px */
+    .two_column {
+      grid-template-columns: 1fr;
+      padding: 10px; /* Display as a single column */
+    }
+  }
+</style>

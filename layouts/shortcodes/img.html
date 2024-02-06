@@ -1,0 +1,23 @@
+<div class="element_container image_container">
+    <div class="element_wrapper image_wrapper" >
+      {{ $src := .Get 0  }}
+      {{ $image := resources.Get $src }}
+      <img src="{{ $image.RelPermalink }}" alt="{{ .Get 1 }}" class=" simple_image {{.Get 2}} " >
+    </div>
+</div>
+
+<style scoped>
+    .image_container{
+
+    }
+
+    .image_wrapper{
+
+    }
+
+    .simple_image{
+        width: 100%;
+        z-index: -1;
+
+    }
+</style>

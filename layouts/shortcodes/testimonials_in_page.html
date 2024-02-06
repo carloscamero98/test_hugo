@@ -1,0 +1,35 @@
+{{ $first_post := .Get 0 }}
+{{ $second_post := .Get 1 }}
+{{ $third_post := .Get 2 }}
+
+<div class="element_container containerCenter" style="margin-top: 50px;">
+  <div class="element_wrapper containerCenter">
+    <!-- Ranges through content/posts/*.md -->
+    <div class="testimonial_container">
+      {{- range where .Site.RegularPages "Type" "success_stories" -}}
+        {{ if or (eq .Title $first_post ) (eq .Title $second_post ) (eq .Title  $third_post ) }}
+        <div class="testimonial_card" style="margin: auto;">
+          <a href="{{ .Permalink }}">
+          <div class="testimonial_featured_image_container ">
+              {{ $image := resources.Get .Params.featured_image }}
+              <img src="{{ $image.RelPermalink }}" alt="" class="testimonial_featured_image"> 
+          </div>
+          <div class="testimonial_text_container">
+              <h3 class="testimonial_title">
+                  {{ .Params.title }}
+              </h3>
+              <p class="testimonial_tags">
+                  {{ .Params.tags }}
+              </p>
+              <p class="testimonial_excerpt">
+                  {{ .Params.excerpt }}
+              </p>
+              <a href="{{ .Permalink }}" class="mainButton" style="text-align:center; margin-top: 100px;"> Learn More</a>
+          </div>
+          </a>
+      </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>

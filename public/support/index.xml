@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Incident Reporting 2 on CIP Reporting</title>
+    <link>http://example.org/support/</link>
+    <description>Recent content in Incident Reporting 2 on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/support/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Support</title>
+      <link>http://example.org/support/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/support/support/</guid>
+      <description>Or You Can Use This Form to Create a Support Ticket Summary of RequestEmailRequest DetailsHaving Problems with Email Based Support? Create an account on our support portal.Go To Portal Find support articles in our online documentation.Go To Documentation Or Call Us and Select Option 2 for Support 1-888-975-2040 (tel)1-703-444-9955 (tel)1-703-962-7795 (fax)sales@cipreporting.cominfo@cipreporting.comsupport@cipreporting.comjobs@cipreporting.com</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+{{ define "header" }}
+
+{{ end }}
+
+{{ define "main" }}
+{{ partial "construction/page_title.html" (dict "context" . "title" .Params.title )}}
+{{ partial "construction/page_subtitle.html" (dict "context" . "subtitle" .Params.subtitle )}}
+    {{ .Content }}
+
+{{ end }}
+

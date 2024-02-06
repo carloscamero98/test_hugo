@@ -1,0 +1,25 @@
+<div class="containerCenter hero" style="margin-top: 10rem;">
+    <div class="heroTextContainer">
+        <h1 class="title" style="color: white; max-width: 500px;"> {{ .Get "title"}}</h1>
+            <p class="text" style="margin-bottom: 25px; color: white;"> {{ .Get "sub_title"}}</p>
+            <a class="mainButton" href="/request_demo/request_demo2/"> See for Yourself</a>
+    </div>
+    <div>
+        {{ $src := .Get "image"  }}
+        {{ $image := resources.Get $src }}
+        <img src="{{ $image.RelPermalink }}" class="landing_image" alt="{{ .Get `alt_image` }}" width="629" height="537" >
+    </div>
+</div>
+
+<style scoped>
+    .landing_image{
+        width: 629px;
+        height: 537px;
+    }
+
+    @media screen and (max-width: 1470px) {
+    .landing_image{
+        display: none;
+    }
+}
+</style>

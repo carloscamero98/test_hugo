@@ -1,0 +1,20 @@
+{{ define "header" }}
+
+{{ end }}
+
+{{ define "main" }}
+    {{ $section := .Site.GetPage "section" .Section }}
+
+    
+
+    {{ partial "construction/page_title.html" (dict "context" . "title" .Params.title )}}
+    <div class="element_container containerCenter">
+        <div class="element_wrapper" style="max-width: 700px;">
+            {{ .Content }}
+        </div>
+    </div>
+
+
+
+
+{{ end }}

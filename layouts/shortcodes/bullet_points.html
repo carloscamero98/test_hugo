@@ -1,0 +1,45 @@
+<div class="element_container containerCenter">
+  <div class="element_wrapper containerCenter bullets_container">
+      {{- range index .Page.Params (.Get 0) }}
+      <div class="single_bullet ">
+        <h3 class="bullet_title accent_orange  ">
+          {{ .title}}
+        </h3>
+        <ul class="bullets_list ">
+          {{- range .points }}
+          <li style="margin-top: -10px;">
+            <p class="sub-text">
+              {{ . }}
+            </p>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{end}}
+  </div>
+</div>
+
+<style scoped>
+
+  .bullets_container{
+
+  }
+
+  .bullets_list{
+    list-style-type: circle;
+    content: "\2022";
+    color: var(--light_blue);
+  }
+
+  .bullet_title {
+    font-size: 27px;
+    font-weight:900;
+  }
+
+  .single_bullet {
+    max-width: 1000px;
+    width: 100%;
+  }
+
+
+</style>

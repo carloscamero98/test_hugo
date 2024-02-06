@@ -1,0 +1,98 @@
+<div class="element_container containerCenter">
+  <div class="element_wrapper">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 75px;  background-image: url(/static/industrial_and_manufacturing.jpg) ">
+        {{- range index .Page.Params (.Get 0 ) }}
+        <div class="flip-box containerCenter" style="flex-basis: 33.333333%; margin-bottom: 5rem;">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+              <div>
+                {{ $icon := .icon }}
+                {{ partial $icon (dict "context" . "width" 100 )}}
+                <div class="box-title containerCenter" style="margin-top:25px; margin-left:px;line-height:35px;color:#253670;">
+                  {{ .title }}  
+                </div>
+              </div>
+            </div>
+            <div class="flip-box-back containerCenter">
+              <div class="box-text" style="width:250px; ">
+                {{ .description }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+
+
+<style scoped>
+  /*----- Flip Boxes----------*/
+.flip-box{
+  background-color: transparent;
+  height: 200px;
+  perspective: 1000px;
+  margin: 10px auto;
+}
+
+.flip-box-inner{
+  position: relative;
+  width: 20em;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-box-front{
+  background-color: #FFFFFF;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 20em;
+  height: 15rem;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.flip-box-back{
+  background-color: #4598D3;
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-title {
+  font-family: Roboto, sans-serif !important;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.box-text {
+  font-family: Roboto, sans-serif !important;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF !important;
+  width: 18em;
+  text-align: center;
+}
+
+
+
+
+
+</style>
+

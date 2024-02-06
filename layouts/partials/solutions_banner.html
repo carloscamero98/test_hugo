@@ -1,0 +1,73 @@
+
+<div class="solutions-banner containerCenter">
+    <div class="container">
+        <div style="vertical-align: top">
+            {{partial "svg/incident_reporting"}}
+            <h3 class="xs-title">Incident Reporting </h3>
+            <p class="sub-text" style="text-align:center">Automates the incident reporting process so you can rest assured your team is consistently and effectively working according to your precise protocols.</p> 
+        </div> 
+    </div>
+    <div class="container">
+        <div style="vertical-align: top">
+            {{partial "svg/incident_reporting"}}
+            <h3 class="xs-title">Compliance </h3>
+            <p class="sub-text" style="text-align:center">Offers a streamlined and integrated approach to compliance that facilitates the step-by-step inspections, audits, and investigations based on your predefined procedures.</p> 
+        </div> 
+    </div>
+    <div class="container">
+        <div style="vertical-align: top">
+            {{partial "svg/incident_reporting"}}
+            <h3 class="xs-title">Healthcare and Workplace Safety </h3>
+            <p class="sub-text" style="text-align:center">Ensures you’re effectively positioned to document and report the issue, identify the root cause, and implement corrective actions.</p> 
+        </div> 
+    </div>
+    <div class="container">
+        <div style="vertical-align: top">
+            {{partial "svg/incident_reporting"}}
+            <h3 class="xs-title">Background Investigations and Licensing </h3>
+            <p class="sub-text" style="text-align:center">Revolutionizes the end-to-end license issuance process.</p> 
+        </div> 
+    </div>
+    
+</div>
+
+
+
+
+<style scoped>
+    .container{
+        text-align: center;
+        display: inline-block;
+        padding: 20px;
+        max-width: 300px;
+        vertical-align: top;
+        margin: auto;
+    }
+    
+    .solutions-banner{
+    padding: 0px;
+    vertical-align: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+
+    h3{
+        color: var(--dark_blue);
+    }
+
+@media screen and (max-width: 1300px) {
+    .solutions-banner{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .solutions-banner{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+</style>

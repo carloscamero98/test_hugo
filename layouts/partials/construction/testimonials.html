@@ -1,0 +1,12 @@
+<div>
+    {{- range index .Page.Params (.Get 0 ) }}
+      <p class="testimonial-carousel">
+        {{ .content }}
+      </p>
+      <p class="speaker-carousel">
+        {{ .author }}
+      </p>
+    {{ end }}
+    
+
+</div>

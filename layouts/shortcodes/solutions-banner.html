@@ -1,0 +1,55 @@
+<div class="element_container containerCenter">
+    <div class="element_wrapper ">
+        <div class="solutions_banner containerCenter" >
+            {{ range index .Page.Params (.Get 0 ) }}
+            <div class="single_solution_container" style=" max-width: 200px;">
+                <a href=" {{ .url }}">
+                    <div style="vertical-align: top">
+                        {{ partial "svg/icon_display.html" (dict "context" . "icon" .icon ) }}
+                        <h4 class="">{{ .title }} </h4>
+                        <p class="sub-text" style="text-align:center">.</p> 
+                    </div> 
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+
+
+
+<style scoped>
+    .single_solution_container{
+        text-align: center;
+        display: inline-block;
+        padding: 20px;
+        max-width: 300px;
+        vertical-align: top;
+    }
+
+    .solutions_banner{
+        padding-left: 20px;
+        padding-right: 20px;
+        vertical-align: top;
+        border-radius: 50px;
+        box-shadow: -1px 22px 24px -16px rgba(0,0,0,0.45);
+        -webkit-box-shadow: -1px 22px 24px -16px rgba(0,0,0,0.45);
+        -moz-box-shadow: -1px 22px 24px -16px rgba(0,0,0,0.45);
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 100px;
+
+        
+    }   
+
+    h3{
+        color: var(--dark_blue);
+    }
+
+    @media (max-width: 1000px) {
+    .solutions_banner {
+      gap: 10px;
+    }
+  }
+</style>

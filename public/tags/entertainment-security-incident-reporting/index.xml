@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Entertainment · Security · Incident Reporting on CIP Reporting</title>
+    <link>http://example.org/tags/entertainment-security-incident-reporting/</link>
+    <description>Recent content in Entertainment · Security · Incident Reporting on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/tags/entertainment-security-incident-reporting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LA Live</title>
+      <link>http://example.org/success_stories/la-live/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/la-live/</guid>
+      <description>Optimizing Security at the World’s Premier Entertainment DestinationL.A. Live has evolved into Los Angeles’ premier entertainment destination, annually hosting more than 1,500 events, including sports, concerts, festivals, film premieres, and award shows. It is also home to renowned restaurants, a massive Regal movie theater, multiple prestigious hotels, conference space, and more. So it’s not surprising that ensuring the security and safety of its more than 20 million annual guests is a top concern.</description>
+    </item>
+    
+  </channel>
+</rss>

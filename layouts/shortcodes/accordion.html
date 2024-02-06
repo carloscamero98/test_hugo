@@ -1,0 +1,42 @@
+
+  </head>
+  <body>
+    <div class="accordion_container">
+    {{- range index .Page.Params (.Get 0 ) }}
+    <button class="accordion"> {{ .Title }} </button>
+    <div class="panel">
+      <p> {{ .Content }}</p>
+    </div>
+    {{ end }}
+  </div>
+
+
+<style scoped>
+  .accordion {
+    color: var(--dark_blue);
+    font-weight: bolder;
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(236, 236, 236);
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #f1f1f1; 
+    color: var(--accent_orange) !important;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  </style>
+    

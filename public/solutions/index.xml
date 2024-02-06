@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Incident Reporting 2 on CIP Reporting</title>
+    <link>http://example.org/solutions/</link>
+    <description>Recent content in Incident Reporting 2 on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/solutions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Background Investigations and Licensing</title>
+      <link>http://example.org/solutions/background_check_and_licensing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/solutions/background_check_and_licensing/</guid>
+      <description>CIP Reporting Revolutionizes End-to-End InvestigationsBy automating your unique method for collecting information, documenting findings, generating an investigative report, and issuing and managing licenses, CIP Reporting eliminates the burden of a manual investigation, increases data accuracy, and shortens the time it takes to approve an applicantSee What Make Us DifferentOur Benefits Streamline the Background Investigation and Licensing Application ProcessEliminate Paper Documentation and Storage CIP Reporting manages all content electronically, thereby eliminating the need to store, manage, and secure paper records.</description>
+    </item>
+    
+    <item>
+      <title>Compliance</title>
+      <link>http://example.org/solutions/compliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/solutions/compliance/</guid>
+      <description>Simplify the Compliance ProcessEach step is documented, the right people are automatically involved, possible non-compliance issues are flagged, and reports are automatically generated, thereby driving an overall increase in both team productivity and compliance. With our compliance management software.See What Make Us DifferentCompliance Applications Inspections Ensure each inspection is centrally planned for, completed on time, precisely executed, and painlessly reported and assessed.Audits Simplify the end-to-end audit management process with centralized management of audit cycles, step-by-step checklists, automatic escalations, tasks, and real-time reporting and analytics to drive continuously improved policy and procedures.</description>
+    </item>
+    
+    <item>
+      <title>Healthcare and Workplace Safety</title>
+      <link>http://example.org/solutions/healthcare_and_safety_management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/solutions/healthcare_and_safety_management/</guid>
+      <description>We Can Help to Keep You SafeCIP Reporting’s Healthcare and Workplace Safety Reporting Software enables you to proactively identify areas of potential risk before accidents occur. And when accidents do happen, CIP Reporting ensures you’re positioned to identify the root cause and implement corrective action, swiftly and with precision.See What Make Us DifferentCIP Reporting’s Incident Reporting Features Injury, Accident, and Near Miss Reporting CIP Reporting streamlines the process of tracking and investigating any work-related incidents in a way that increases team efficiency, simplifies the documentation required by external agencies, and shortens the time necessary to identify preventative measures.</description>
+    </item>
+    
+    <item>
+      <title>Incident Reporting</title>
+      <link>http://example.org/solutions/incident_reporting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/solutions/incident_reporting/</guid>
+      <description>Let Us Help Optimize Your Incident ResponseCIP Reporting’s configurable solution streamlines and simplifies incident logging, workflow, tracking, and reporting according to your processes so that you are empowered to minimize risk, ensure regulatory compliance, and focus on driving continuous quality improvements.See What Make Us DifferentCIP Reporting’s Incident Reporting Features Event Logging Capture and record event details in real-time. Using our event logging interface, you can easily capture the people involved, event details, add additional information as it becomes known, and generate reports on any or all events.</description>
+    </item>
+    
+  </channel>
+</rss>

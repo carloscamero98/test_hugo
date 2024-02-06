@@ -1,0 +1,99 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'CIP Reporting'
+
+[menu]
+    [[menu.main]]
+    name='Why CIP Reporting'
+    pageRef= '/why/why'
+    weight=1
+
+    [[menu.main]]
+    name='Solutions'
+    pageRef= '/solutions'
+    weight=2
+
+        [[menu.main]]
+        name='Incident Reporting'
+        pageRef= 'solutions/incident_reporting.md'
+        parent = 'Solutions'
+    
+        [[menu.main]]
+        name='Healthcare and Workplace Safety'
+        pageRef= 'solutions/healthcare_and_safety_management.md' 
+        parent = 'Solutions'
+
+        [[menu.main]]
+        name='Compliance'
+        pageRef= 'solutions/Compliance.md' 
+        parent = 'Solutions'
+
+        [[menu.main]]
+        name='Background Check and Licensing'
+        pageRef= 'solutions/background_check_and_licensing.md' 
+        parent = 'Solutions'
+
+
+    [[menu.main]]
+    name='Industries'
+    pageRef= '/industries'
+
+        [[menu.main]]
+        name='Casino and Gaming'
+        pageRef= 'industries/casino gaming.md'
+        parent = 'Industries'
+
+        [[menu.main]]
+        name='Industrial and Manufacturing'
+        pageRef= 'industries/industrial and manufacturing.md'
+        parent = 'Industries'
+
+        [[menu.main]]
+        name='Health and Human Services'
+        pageRef= 'industries/health and human services.md'
+        parent = 'Industries'
+
+        [[menu.main]]
+        name='Hospitality and Entertainment'
+        pageRef= 'industries/Hospitality and Entertainment.md'
+        parent = 'Industries'
+
+
+        [[menu.main]]
+        name='Insurance'
+        pageRef= 'industries/insurance.md'
+        parent = 'Industries'
+
+
+        [[menu.main]]
+        name='Law Enforcement'
+        pageRef= 'industries/law Enforcement.md'
+        parent = 'Industries'
+
+
+        [[menu.main]]
+        name='Real Estate'
+        pageRef= 'industries/Real Estate.md'
+        parent = 'Industries'
+
+        [[menu.main]]
+        name='Trade, Transportation and Utilities'
+        pageRef= 'industries/Transportation.md'
+        parent = 'Industries'
+
+
+    [[menu.main]]
+    name='Testimonials'
+    pageRef= '/success_stories'
+    
+
+    [[menu.main]]
+    name='Support'
+    pageRef= '/support/support'
+
+    [[menu.main]]
+    name='Resources'
+    pageRef= '/Resources'
+
+
+

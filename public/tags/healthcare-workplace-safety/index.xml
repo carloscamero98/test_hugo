@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Healthcare · Workplace Safety on CIP Reporting</title>
+    <link>http://example.org/tags/healthcare-workplace-safety/</link>
+    <description>Recent content in Healthcare · Workplace Safety on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/tags/healthcare-workplace-safety/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integral Care</title>
+      <link>http://example.org/success_stories/integral-care/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/integral-care/</guid>
+      <description>Keeping Clients and Employees Safe by Making Incident Reporting Intuitive and Intelligent Spanning 45 locations, Integral Care’s 900 employees serve nearly 30,000 adults and children living with mental illness, substance use disorder, and/or intellectual and developmental disabilities. For Melody Moscal, Integral Care’s Quality Experience Administrator, keeping clients and staff safe is the top priority. She depends on timely, complete, and trackable incident reporting to stay informed on trends in order implement necessary risk-minimizing practices.</description>
+    </item>
+    
+    <item>
+      <title>Woodcreek Provider Services</title>
+      <link>http://example.org/success_stories/woodcreek-provider-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/woodcreek-provider-services/</guid>
+      <description>Increasing Quality of Care by Automating the Incident Reporting Process“It all starts with safety” is Woodcreek Provider Services’ employee safety mantra. Woodcreek leaders maintain a keen focus on providing the best quality of care and doing so safely—and they continuously search for ways to improve.Just a few years back, Woodcreek was using pen and paper to manage all quality-of-care and staff issues. When there was an incident, employees would print a copy of the necessary form, handwrite all pertinent information, and turn it in to the appropriate manager.</description>
+    </item>
+    
+  </channel>
+</rss>

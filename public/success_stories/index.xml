@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testimonials on CIP Reporting</title>
+    <link>http://example.org/success_stories/</link>
+    <description>Recent content in Testimonials on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/success_stories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integral Care</title>
+      <link>http://example.org/success_stories/integral-care/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/integral-care/</guid>
+      <description>Keeping Clients and Employees Safe by Making Incident Reporting Intuitive and Intelligent Spanning 45 locations, Integral Care’s 900 employees serve nearly 30,000 adults and children living with mental illness, substance use disorder, and/or intellectual and developmental disabilities. For Melody Moscal, Integral Care’s Quality Experience Administrator, keeping clients and staff safe is the top priority. She depends on timely, complete, and trackable incident reporting to stay informed on trends in order implement necessary risk-minimizing practices.</description>
+    </item>
+    
+    <item>
+      <title>International Logistic Company</title>
+      <link>http://example.org/success_stories/international-logistic-company/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/international-logistic-company/</guid>
+      <description>Empowering the Shift: From Manual Claims Processing to Focusing on Risk Mitigation and PreventionAs a third-party logistics provider, moving goods around the globe involves inherent risks, to employees who are handling the products, risks to customers should anything happen to those products in transit, and risks to the company’s property. It is therefore critical to have a robust system for reporting, documenting, and tracking near misses, incidents, and claims wherever they occur in the world.</description>
+    </item>
+    
+    <item>
+      <title>LA Live</title>
+      <link>http://example.org/success_stories/la-live/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/la-live/</guid>
+      <description>Optimizing Security at the World’s Premier Entertainment DestinationL.A. Live has evolved into Los Angeles’ premier entertainment destination, annually hosting more than 1,500 events, including sports, concerts, festivals, film premieres, and award shows. It is also home to renowned restaurants, a massive Regal movie theater, multiple prestigious hotels, conference space, and more. So it’s not surprising that ensuring the security and safety of its more than 20 million annual guests is a top concern.</description>
+    </item>
+    
+    <item>
+      <title>Seneca Cayuga Nation</title>
+      <link>http://example.org/success_stories/seneca-cayuga-nation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/seneca-cayuga-nation/</guid>
+      <description>Attaining the Highest Levels of Compliance by Empowering the Agency to Work as One Proficient, Integrated TeamThe goal of Seneca–Cayuga’s Gaming Commission Agency is quite specific: ensure the integrity of the games and protect the interest of the tribe through comprehensive regulation. While the agency’s team of 25—spanning compliance, auditing, surveillance, and licensing—was working hard, it was struggling to deliver the desired results.“My team was lacking insight into one another’s work.</description>
+    </item>
+    
+    <item>
+      <title>Tribal Nation Gaming Comission</title>
+      <link>http://example.org/success_stories/tribal-nation-gaming-comission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/tribal-nation-gaming-comission/</guid>
+      <description>Transforming Background Investigations and Licensing to Increase Compliance and Enhance EfficiencyThe Background and Licensing (B&amp;L) Department works diligently to protect the Tribal Nation’s gaming operations by ensuring all applicants meet the requirements to hold a privileged gaming license or permit. Just a few years back though, the department hit a tipping point. Its paper-based system for processing applications was inefficient, was not trackable, and incurred significant expense.At the time, this tribal nation’s four B&amp;L offices were processing 8,000-10,000 applications each year in support of its 24 gaming facilities.</description>
+    </item>
+    
+    <item>
+      <title>Valley Forge</title>
+      <link>http://example.org/success_stories/valley-forge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/valley-forge/</guid>
+      <description>Optimizing Security at the World’s Premier Entertainment DestinationIn preparation for Valley Forge Casino Resort’s grand opening, top-of-the-line surveillance equipment was deployed. Cameras were expertly installed throughout every area of the resort, and the monitoring capability was exceptional. However, upon coming onboard, Jesse Silva, Director of Surveillance for Valley Forge Casino Resort, immediately identified one major gap—the team needed a surveillance incident management solution.“It is impossible to be impactful in surveillance using just pen and paper.</description>
+    </item>
+    
+    <item>
+      <title>Woodcreek Provider Services</title>
+      <link>http://example.org/success_stories/woodcreek-provider-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/success_stories/woodcreek-provider-services/</guid>
+      <description>Increasing Quality of Care by Automating the Incident Reporting Process“It all starts with safety” is Woodcreek Provider Services’ employee safety mantra. Woodcreek leaders maintain a keen focus on providing the best quality of care and doing so safely—and they continuously search for ways to improve.Just a few years back, Woodcreek was using pen and paper to manage all quality-of-care and staff issues. When there was an incident, employees would print a copy of the necessary form, handwrite all pertinent information, and turn it in to the appropriate manager.</description>
+    </item>
+    
+  </channel>
+</rss>

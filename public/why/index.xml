@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Incident Reporting 2 on CIP Reporting</title>
+    <link>http://example.org/why/</link>
+    <description>Recent content in Incident Reporting 2 on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/why/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why CIP Reporting</title>
+      <link>http://example.org/why/why/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/why/why/</guid>
+      <description>Increase compliance Eliminating manually-intensive, paper-based processes lowers the risk of errors and ensures the work is correct every time.Go Paperless Our electronic management of documentation and workflow means that paper records are no longer needed. Audit Trail Tracking of all information including edit history, assignments, and approvals enables complete and accurate reporting. Automated, Centralized Solution CIP Reporting’s centralized solution with conditional workflow logic ensures your team is always following the right protocol.</description>
+    </item>
+    
+  </channel>
+</rss>

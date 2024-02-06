@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Incident Reporting 2 on CIP Reporting</title>
+    <link>http://example.org/request_demo/</link>
+    <description>Recent content in Incident Reporting 2 on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/request_demo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Incident Reporting 2</title>
+      <link>http://example.org/request_demo/request_demo2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/request_demo/request_demo2/</guid>
+      <description>From Requesting a Demo You Will: Get a first-hand impression of our solution.Obtain real-time answers to any questions you have.Receive a custom demo for your specific needs.Request DemoWe recommend you see the product for yourself.NameCompanyEmail</description>
+    </item>
+    
+  </channel>
+</rss>

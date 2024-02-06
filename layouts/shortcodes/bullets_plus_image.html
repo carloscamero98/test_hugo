@@ -1,0 +1,101 @@
+{{ $align := .Get 3 }}
+{{ $type := .Get 4 }}
+
+{{ if eq $align "left" }}
+<div class="element_container containerCenter " >
+    <div class="content_conlumns element_wrapper">
+        <div class="content_conlumn">
+            <h3 class="xs-title {{ .Get 5 }} ">
+                {{ .Get 5}}
+            </h3>
+            <ul>
+                {{- range index .Page.Params (.Get 0) }}
+                <li class="why_list_item {{ .color }} ">
+                    {{ if eq $type "type_2"}}
+                    <h3 class=" sub_bullet_title "> {{ .title }} </h3>
+                    {{else}}
+                    <h3 class=" xs-title "> {{ .title }} </h3>
+                    {{ end}}
+                    <p class="text"> {{ .content}} </p>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+        <div class="content_conlumn containerCenter">
+            {{ $src := .Get 1 }}
+            {{ $image := resources.Get $src }}
+            <img src="{{ $image.RelPermalink }}" alt="{{ .Get 2 }}" class="img_in_column">
+        </div>
+    </div>
+</div>
+{{else}}
+<div class="element_container containerCenter " >
+    <div class="content_conlumns element_wrapper">
+        <div class="content_conlumn containerCenter">
+                {{ $src := .Get 1 }}
+                {{ $image := resources.Get $src }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ .Get 2 }}" class="img_in_column">
+        </div>
+        <div class="content_conlumn">
+            <h3 class="xs-title {{ .Get 6 }} ">
+                {{ .Get 5 }} 
+            </h3>
+            <ul>
+                {{- range index .Page.Params (.Get 0) }}
+                <li class="why_list_item {{ .color }} ">
+                    {{ if eq $type "type_2"}}
+                    <h3 class=" sub_bullet_title "> {{ .title }} </h3>
+                    {{else}}
+                    <h3 class=" xs-title "> {{ .title }} </h3>
+                    {{ end}}
+                    <p class="text"> {{ .content}} </p>
+                </li>
+                {{end}}
+            </ul>
+        </div>
+    </div>
+</div>
+{{end}}
+
+<style scoped>
+    .content_conlumns {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content:space-around;
+        gap: 0;
+    }
+
+    .content_conlumn{
+        padding: 50px;
+
+    }
+
+    .why_list_item{
+        margin-bottom: 50px;
+    }
+    
+    .why_list_item > p{
+        margin-top: -20px !important;
+    }
+
+    .img_in_column{
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 500px;
+
+    }
+
+
+    @media (max-width: 900px) {
+    .content_conlumns {
+      grid-template-columns: 1fr; 
+    }
+
+    .benefit_title{
+        margin-top: 50px;
+    }
+  }
+
+
+
+</style>

@@ -1,0 +1,56 @@
+{{ define "header" }}
+
+{{ end }}
+
+{{ define "main" }}
+{{ partial "construction/page_title.html" (dict "context" . "title" .Params.title )}}
+{{ partial "construction/page_subtitle.html" (dict "context" . "subtitle" .Params.subtitle )}}
+
+{{ .Content }}
+
+
+
+<style scoped>
+  .phone_list{
+    padding-left: 50px;
+    padding-right: 50px;
+
+  }
+
+  .phone_item{
+    color: white;
+    font-size: 25px;
+    margin-top: 5px;
+
+  }
+
+  .support_button_container{
+    padding: 50px;
+    padding-top: 20px;
+  }
+
+  .support_button_text{
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  a.support_button {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  color: var(--light_blue);    
+  font-weight: 900;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  }
+</style>
+
+
+{{ end }}
+

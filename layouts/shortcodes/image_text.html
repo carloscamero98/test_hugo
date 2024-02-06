@@ -1,0 +1,50 @@
+{{ $align := .Get "align" }}
+
+<div class="element_container containerCenter">
+  <div class="element_wrapper">
+    <div class="containerCenter  " style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 50px; margin-bottom: 50px;">
+      {{ if eq $align "left"}}
+      <div style="padding: 20px; max-width: 600px; margin: auto;">
+        <h2 class="sub-title" style="color: var(--accent_orange)">
+          {{ .Get "title"}}
+        </h2>
+        <p class="text" style="color: var(--light_gray);">
+          {{ .Get "content" }}
+        </p>
+        <div class="containerCenter">
+          <a class="mainButton" style="text-align:center" href="/request_demo/request_demo2/">
+              See What Make Us Different
+          </a>
+      </div>  
+    </div>
+    <div class="containerCenter" style="max-width: 550px; padding: 20px; margin: auto;" >
+      {{ $src := .Get "image"  }}
+      {{ $image := resources.Get $src }}
+    <img src="{{ $image.RelPermalink }}" alt="{{ .Get `alt_image` }}" width="100%" >
+    </div>
+    
+      {{ else }}
+    
+      <div class="containerCenter" style="max-width: 550px; padding: 20px; margin: auto;" >
+        {{ $src := .Get "image"  }}
+        {{ $image := resources.Get $src }}
+      <img src="{{ $image.RelPermalink }}" alt="{{ .Get `alt_image` }}" width="100%" >
+      </div>
+      <div style="padding: 20px; max-width: 600px; margin: auto;">
+          <h2 class="sub-title" style="color: var(--accent_orange)">
+            {{ .Get "title"}}
+          </h2>
+          <p class="text" style="color: var(--light_gray);">
+            {{ .Get "content" }}
+          </p>
+          <div class="containerCenter">
+            <a class="mainButton" style="text-align:center" href="/request_demo/request_demo2/">
+                See What Make Us Different
+            </a>
+        </div>  
+      </div>
+    
+      {{ end }}
+    </div>
+  </div>
+</div>

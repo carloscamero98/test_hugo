@@ -1,0 +1,32 @@
+<div class="blue-area" >
+    <h3 class="xs-title blue-area-caption" >
+        {{ .Get "title" }}
+    </h3>
+
+<div class="blue-banner containerCenter">
+    {{- range index .Page.Params (.Get "first_banner") }}
+    <div class="blue-banner-element">
+        <h3 class="blue-banner-text xs-title"> {{ .title }} </h3>
+        <p class="text blue-banner-text">
+        {{ .content }}
+        </p>
+    </div>  
+    {{ end }}       
+</div>
+<div class="blue-banner containerCenter">
+    {{- range index .Page.Params (.Get "second_banner") }}
+    <div class="blue-banner-element">
+        <h3 class="blue-banner-text xs-title"> {{ .title }} </h3>
+        <p class="text blue-banner-text">
+        {{ .content }}
+        </p>
+    </div>  
+    {{ end }}        
+</div>
+
+<div class="containerCenter">
+    <a class="mainButton" style="text-align:center" href="/request_demo/request_demo2/"> 
+        See What Make Us Different
+    </a>
+</div>  
+</div>

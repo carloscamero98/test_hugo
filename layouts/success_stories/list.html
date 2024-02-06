@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="containerCenter" style="padding-top: 10rem;">
+    <h1 class="title" style="color: var(--dark_blue);">
+        Success Stories
+    </h1>
+</div> 
+
+<div class="element_container containerCenter" style="margin-top: 50px;">
+    <div class="element_wrapper containerCenter">
+      <!-- Ranges through content/posts/*.md -->
+      <div class="testimonial_container">
+        {{ range .Pages }}
+            <div class="testimonial_card" style="margin: auto;">
+                <a href="{{ .Permalink }}">
+                <div class="testimonial_featured_image_container ">
+                    {{ $image := resources.Get .Params.featured_image }}
+                    <img src="{{ $image.RelPermalink }}" alt="" class="testimonial_featured_image"> 
+                </div>
+                <div class="testimonial_text_container">
+                    <h3 class="testimonial_title">
+                        {{ .Params.title }}
+                    </h3>
+                    <p class="testimonial_tags">
+                        {{ .Params.tags }}
+                    </p>
+                    <p class="testimonial_excerpt">
+                        {{ .Params.excerpt }}
+                    </p>
+                    <a href="{{ .Permalink }}" class="mainButton" style="text-align:center; margin-top: 100px;"> Learn More</a>
+                </div>
+                </a>
+            </div>
+        {{ end }}
+      </div>
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lans on CIP Reporting</title>
+    <link>http://example.org/lan/</link>
+    <description>Recent content in Lans on CIP Reporting</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/lan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Incident Reporting Software</title>
+      <link>http://example.org/lan/incident_reporting_software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/lan/incident_reporting_software/</guid>
+      <description>Incident Reporting SoftwareWith our streamlined incident reporting software, you can rest assured you and your team are responding appropriately and quickly and are empowered to identify potential issues early.See What Make Us DifferentIncident Reporting Features Event Logging Capture and record event details in real-time. Using our event logging interface, you can easily capture the people involved, event details, add additional information as it becomes known, and generate reports on any or all events.</description>
+    </item>
+    
+  </channel>
+</rss>

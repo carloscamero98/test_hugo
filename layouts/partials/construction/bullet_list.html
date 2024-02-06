@@ -1,0 +1,18 @@
+<div class="containerCenter bullet_container" style="flex-wrap: wrap; display: flex; justify-content: space-between;">
+    {{- range .bullets }}
+    <div class="single_bullet" style="flex-basis: 50%;">
+      <h2 class="sub-title">
+        {{ .title}}
+      </h2>    
+      <ul>
+        {{- range .points }}
+        <li>
+          <p class="sub-text">
+            {{ . }}
+          </p>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{end}}
+  </div>

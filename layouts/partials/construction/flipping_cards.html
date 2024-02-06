@@ -1,0 +1,21 @@
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 75px;">
+    {{- range .features }}
+    <div class="flip-box containerCenter" style="flex-basis: 33.333333%; margin-bottom: 5rem;">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div>
+            {{ partial "svg/icon_display.html" (dict "context" . "icon" .icon "width" 100 )}}
+            <div class="box-title containerCenter" style="margin-top:25px; margin-left:px;line-height:35px;color:#253670;">
+              {{ .title }}  
+            </div>
+          </div>
+        </div>
+        <div class="flip-box-back containerCenter">
+          <div class="box-text" style="width:250px; ">
+            {{ .description }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>

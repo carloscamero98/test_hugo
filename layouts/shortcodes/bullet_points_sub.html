@@ -1,0 +1,58 @@
+<div class="element_container containerCenter">
+  <div class="element_wrapper containerCenter">
+    <div class="sub_bullet_container">
+      {{- range index .Page.Params (.Get 0) }}
+      <div class="list_item_container">
+        <h3 class="sub_bullet_title">
+          {{ .title}}
+        </h3>
+        <ul class="sub_bullet_list">
+          {{- range .points }}
+          <li class="sub_bullet_list_item">
+            {{ . }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</div>
+
+<style scoped>
+  .sub_bullet_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .sub_bullet_title {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: var(--dark_gray);
+  }
+
+  .list_item_container{
+    padding: 10px;
+  }
+
+  .sub_bullet_list {
+    margin-top: 0px;
+    max-width: 500px;
+    list-style-type: circle;
+    flex-basis: 50;
+  }
+
+  .sub_bullet_list_item {
+    margin-top: 2px;
+
+  }
+
+  @media (max-width: 600px) {
+    /* Add responsive styles for screens with a maximum width of 768px */
+    .sub_bullet_container {
+      grid-template-columns: 1fr; /* Display as a single column */
+    }
+  }
+</style>

@@ -1,0 +1,77 @@
+{{ define "main" }}
+<div class="containerCenter" style="padding-top: 10rem;">
+    <h1 class="title" style="color: var(--dark_blue);">
+        Our Solutions
+    </h1>
+</div> 
+
+<div class="element_container containerCenter">
+    <div class="element_wrapper containerCenter">
+      <div class="solutions_card_container containerCenter">
+        {{ range .Pages }}
+            <div class="solution_card">
+
+                <h2 class="solution_title">
+                    {{ .Params.title }}
+                </h2>
+
+                <p class="solution_excerp">
+                    {{ .Params.subtitle }}
+
+                </p>
+
+                <a href="{{ .Permalink }}" class="mainButton solutions_button"> Learn More</a>
+
+            </div>
+        {{ end }}
+      </div>
+    </div>
+</div>
+
+<style scoped>
+    .solutions_card_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        justify-content: space-between;
+        gap: 50px;
+
+    }
+
+    .solutions_button{
+        text-align: center;
+    }
+
+    .solution_card{
+        padding: 20px;
+        margin-top: 50px;
+        max-width: 450px;
+        text-align: center;
+
+    }
+
+    .solution_card:hover{
+        background-color: rgb(230, 243, 255);
+    }
+
+    .solution_title{
+        text-align: center;
+        color: var(--accent_orange);
+
+    }
+
+    .solution_excerp{
+        text-align: center;
+        margin-bottom:7%;
+    }
+
+
+    @media only screen and (max-width: 700px) {
+  .solutons_card_container{
+    grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+{{ end }}

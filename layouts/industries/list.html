@@ -1,0 +1,88 @@
+{{ define "main" }}
+<div class="containerCenter" style="padding-top: 10rem;">
+    <h1 class="title" style="color: var(--dark_blue);">
+        Industries We Have Worked With
+    </h1>
+</div> 
+
+<div class="element_container containerCenter">
+    <div class="element_wrapper containerCenter">
+      <div class="industries_card_container containerCenter">
+        {{ range .Pages }}
+            <div class="industry_card">
+
+                {{ $align := .Params.featured_icon }}
+                {{ partial $align (dict "context" . "width" 50 )}}
+
+                <h2 class="industry_title">
+                    {{ .Params.title }}
+                </h2>
+
+                <p class="industry_excerp">
+                    {{ .Params.excerpt }}
+
+                </p>
+
+                <a href="{{ .Permalink }}" class="mainButton industry_button"> Learn More</a>
+
+            </div>
+        {{ end }}
+      </div>
+    </div>
+</div>
+
+<style scoped>
+    .industries_card_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        justify-content: space-between;
+        gap: 50px;
+
+    }
+
+    .industry_button{
+        text-align: left;
+    }
+
+    .industry_card{
+        padding: 20px;
+        margin-top: 50px;
+        max-width: 450px;
+        text-align: center;
+
+    }
+
+
+
+    .industry_card:hover{
+        background-color: rgb(230, 243, 255);
+    }
+
+    .industry_title{
+        text-align: center;
+        color: var(--accent_orange);
+
+    }
+
+    .industry_excerp{
+        text-align: left;
+        margin-bottom:7%;
+    }
+
+
+    @media only screen and (max-width: 1100px) {
+  .industries_card_container{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .industries_card_container{
+    grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+{{ end }}

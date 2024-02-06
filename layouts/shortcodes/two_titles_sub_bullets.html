@@ -1,0 +1,48 @@
+<div class="element_container containerCenter  " >
+    <div class="content_conlumns element_wrapper">
+        <div class="content_conlumn">
+            <div class="element_container containerCenter background_light_blue " style="border-radius: 10px;">
+                <div class="element_wrapper ">    
+                  <div style="padding: 20px;">
+                        <h2 class=" sub-title white center  ">
+                            {{ .Get "left_title" }}
+                        </h2>
+                        <p class="text white" style="text-align: center; padding-bottom: 50px;">
+                            {{ .Get "left_caption" }}
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <ul>
+                {{- range index .Page.Params (.Get "left_bullets" ) }}
+                <li class="why_list_item">
+                    <h3 class="xs-title {{ .color }}">  {{ .title}} </h3>
+                    <p class="text">Real-time snapshots of performance metrics demonstrates and documents team action and activity.</p>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="content_conlumn">
+            <div class="element_container containerCenter background_accent_orange " style="border-radius: 10px;">
+                <div class="element_wrapper ">    
+                  <div style="padding: 20px;">
+                        <h2 class=" sub-title white center  ">
+                            {{ .Get "right_title" }}
+                        </h2>
+                        <p class="text white" style="text-align: center; padding-bottom: 50px;">
+                            {{ .Get "right_caption" }}
+                        </p>
+                    </div> 
+                </div>
+            </div>
+            <ul>
+                {{- range index .Page.Params (.Get "right_bullets" ) }}
+                <li class="why_list_item">
+                    <h3 class="xs-title {{ .color }}"> {{ .title }}</h3>
+                    <p class="text"> {{ .content }} </p>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>
