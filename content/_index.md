@@ -63,18 +63,4 @@ other_solutions:
   
   
 ---
-{{< landing/hero_section title= "Protect the Things that Matter Most." sub_title="Your process. Our software. Risk minimized." button_text="See fot Yourself" image="images/CIP Reporting Workflow.png" alt_image="Problem solving workflow" >}}
-
-{{< section_sub_title accent_orange center >}} Your Workflow. Our Software. Learn How! {{< /section_sub_title>}} 
-{{< youtube_video >}}
-
-{{< landing/blue_banners 
-  title="Our highly-configurable solution automates, documents, reports, and analyzes risk management processes, so you’re prepared to take on the risks of today’s dynamic industries." 
-  first_banner= "first_banner"
-  second_banner="second_banner"
-  >}} 
-
-{{< logo_carousel images="logo_carousel" >}}
-
-{{< section_title accent_orange center >}} CIP Reporting Solutions {{< /section_sub_title>}} 
-{{< solutions-banner other_solutions >}}
+hola

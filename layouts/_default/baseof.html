@@ -33,9 +33,9 @@
   </head>
 
   <body>
-      {{partial "nav" (dict "menuID" "main" "page" .)}}
+
       {{ block "main" . }}{{ end }}
-      {{partial "footer"}}
+    
       <script src="{{ .Site.BaseURL }}/js/scripts.min.js" defer></script>
       <script> //-- This script is for the accordion component ---*//
                 var acc = document.getElementsByClassName("accordion");
